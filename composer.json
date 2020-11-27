@@ -1,0 +1,18 @@
+{
+    "name": "websolutespa/magento-transporter-alyante-adaptor",
+    "description": "Websolute Transporter Activity module",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "*",
+        "websolutespa/magento-transporter-base": "^1.0"
+    },
+    "license": "OSL-3.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Websolute\\TransporterAlyanteAdaptor\\": ""
+        }
+    }
+}

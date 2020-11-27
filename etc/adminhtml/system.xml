@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright © Websolute spa. All rights reserved.
+  ~ See COPYING.txt for license details.
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="transporter_alyante" translate="label" sortOrder="11" showInDefault="1" showInWebsite="0" showInStore="0">
+            <class>separator-top</class>
+            <label>Alyante</label>
+            <tab>transporter</tab>
+            <resource>Websolute_TransporterBase::configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General</label>
+                <field id="webservice_url" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Webservice url</label>
+                </field>
+                <field id="webservice_username" translate="label" type="text" sortOrder="31" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Webservice username</label>
+                </field>
+                <field id="webservice_password" translate="label" type="password" sortOrder="32" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Webservice password</label>
+                </field>
+                <field id="webservice_authorization_scope" translate="label" type="text" sortOrder="33" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Webservice authorization scope</label>
+                </field>
+                <field id="webservice_response_compressed" translate="label" type="select" sortOrder="35" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Webservice response compressed</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
